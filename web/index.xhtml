@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+
+      xmlns:h="http://java.sun.com/jsf/html" xmlns:p="http://primefaces.org/ui" xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+    <title>Döviz Kurları</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <h:outputStylesheet library="css" name="bootstrap.css"/>
+    <h:outputStylesheet library="css" name="bootstrap.min.css"/>
+</h:head>
+<h:body>
+    <h:form>
+        <center>
+            <div class="container">
+
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                    data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#">BuFinans ®</a>
+                        </div>
+                        <div id="navbar" class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="#">Anasayfa</a></li>
+                                <li><a href="#">Hakkımızda</a></li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#">İletişim</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="container">
+                <div class="col-sm-6">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading"><strong>Döviz Kurları</strong></div>
+                        <div class="panel-body">
+                            <h:panelGrid columns="3" class="table table-striped table-bordered">
+                                <h:graphicImage value="resources/img/ewrg.png"/>ABD Doları Alış: <h:outputText value="#{kur.doviz.dolarAlisFiyat}  TL"/>
+                                <h:graphicImage value="resources/img/ewrg.png"/>ABD Doları Satış: <h:outputText value="#{kur.doviz.dolarSatisFiyat} TL"/>
+                                <h:graphicImage value="resources/img/df3.png"/>Euro Alış: <h:outputText value="#{kur.doviz.euroAlisFiyat} TL"/>
+                                <h:graphicImage value="resources/img/df3.png"/>Euro Satış: <h:outputText value="#{kur.doviz.euroSatisFiyat} TL"/>
+                            </h:panelGrid>
+                            <h4><span class="label label-success">Güncelleme Zamanı : 18.05.2017 16:00:03 </span></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="panel panel-danger">
+                        <div class="panel-heading"><strong>Döviz Çevir</strong></div>
+                        <div class="panel-body">
+                            <h:panelGrid columns="2" class="table table-striped table-bordered">
+                               <h5>Miktar Giriniz </h5><h:inputText id="cevir" class="form-control" />
+                            </h:panelGrid>
+
+                            <p:selectOneMenu id="console" value="" styleClass="btn-default">
+                                <f:selectItem itemLabel="Dönüşüm Türü Seçiniz" itemValue="" />
+                                <f:selectItem itemLabel="USD -> TL" itemValue="USD -> TL" />
+                                <f:selectItem itemLabel="EURO -> TL" itemValue="Xbox One" />
+                                <f:selectItem itemLabel="TL - USD" itemValue="PS4" />
+                                <f:selectItem itemLabel="TL - EURO" itemValue="Wii U" />
+                            </p:selectOneMenu>
+                                <br></br>
+                           <h1><h:outputText value="Sonuç : "/></h1>
+                            <h4><span class="label label-success">Güncelleme Zamanı : 18.05.2017 16:00:03 </span></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </center>
+    </h:form>
+</h:body>
+</html>
