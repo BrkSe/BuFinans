@@ -1,4 +1,4 @@
-package model;
+package com.burakkutbay.model;
 
 /**
  * Created by hasanburakkutbay on 23.05.2017.
