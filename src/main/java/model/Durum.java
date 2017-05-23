@@ -11,6 +11,7 @@ public class Durum {
     private String yarimAltin;
     private String tamAltin;
     private String cumhuriyetAltin;
+    private String onsAltin;
 
     public String getDolarDoviz() {
         return dolarDoviz;
@@ -58,5 +59,13 @@ public class Durum {
 
     public void setCumhuriyetAltin(String cumhuriyetAltin) {
         this.cumhuriyetAltin = cumhuriyetAltin;
+    }
+
+    public String getOnsAltin() {
+        return onsAltin;
+    }
+
+    public void setOnsAltin(String onsAltin) {
+        this.onsAltin = onsAltin;
     }
 }
