@@ -1,4 +1,4 @@
-package model;
+package com.burakkutbay.model;
 
 import java.io.Serializable;
 
