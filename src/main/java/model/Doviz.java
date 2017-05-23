@@ -11,8 +11,6 @@ public class Doviz implements Serializable {
     private String dolarSatisFiyat;
     private String euroAlisFiyat;
     private String euroSatisFiyat;
-    private String guncellemeZamani;
-    private String mesaj;
 
     public String getDolarAlisFiyat() {
         return dolarAlisFiyat;
@@ -28,22 +26,6 @@ public class Doviz implements Serializable {
 
     public void setDolarSatisFiyat(String dolarSatisFiyat) {
         this.dolarSatisFiyat = dolarSatisFiyat;
-    }
-
-    public String getGuncellemeZamani() {
-        return guncellemeZamani;
-    }
-
-    public void setGuncellemeZamani(String guncellemeZamani) {
-        this.guncellemeZamani = guncellemeZamani;
-    }
-
-    public String getMesaj() {
-        return mesaj;
-    }
-
-    public void setMesaj(String mesaj) {
-        this.mesaj = mesaj;
     }
 
     public String getEuroAlisFiyat() {
