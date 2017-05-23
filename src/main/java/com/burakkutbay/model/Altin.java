@@ -1,10 +1,14 @@
-package model;
+package com.burakkutbay.model;
+
+import org.springframework.stereotype.Component;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * Created by hasanburakkutbay on 19.05.2017.
  */
+@Component
 public class Altin implements Serializable {
 
     private String selling;
@@ -18,6 +22,7 @@ public class Altin implements Serializable {
     private String short_name;
     private String source_name;
     private String source_full_name;
+    private List<Altin> ek;
 
     public String getSelling() {
         return selling;
@@ -105,5 +110,13 @@ public class Altin implements Serializable {
 
     public void setSource_full_name(String source_full_name) {
         this.source_full_name = source_full_name;
+    }
+
+    public List<Altin> getEk() {
+        return ek;
+    }
+
+    public void setEk(List<Altin> ek) {
+        this.ek = ek;
     }
 }
