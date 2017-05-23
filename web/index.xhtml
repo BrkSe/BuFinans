@@ -8,7 +8,6 @@
     <title>Döviz Kurları</title>
     <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
     <h:outputStylesheet library="css" name="bootstrap.css"/>
-    <h:outputStylesheet library="css" name="bootstrap.min.css"/>
 </h:head>
 <h:body>
     <h:form>
@@ -46,10 +45,10 @@
                         <div class="panel-heading"><strong>Döviz Kurları</strong></div>
                         <div class="panel-body">
                             <h:panelGrid columns="3" class="table table-striped table-bordered">
-                                <h:graphicImage value="resources/img/ewrg.png"/>ABD Doları Alış: <h:outputText value="#{kur.doviz.dolarAlisFiyat}  TL"/>
-                                <h:graphicImage value="resources/img/ewrg.png"/>ABD Doları Satış: <h:outputText value="#{kur.doviz.dolarSatisFiyat} TL"/>
-                                <h:graphicImage value="resources/img/df3.png"/>Euro Alış: <h:outputText value="#{kur.doviz.euroAlisFiyat} TL"/>
-                                <h:graphicImage value="resources/img/df3.png"/>Euro Satış: <h:outputText value="#{kur.doviz.euroSatisFiyat} TL"/>
+                                <h:graphicImage value="resources/img/ewrg.png"/>ABD Doları Alış: <h:outputText value="₺ #{kur.doviz.dolarAlisFiyat}"/>
+                                <h:graphicImage value="resources/img/ewrg.png"/>ABD Doları Satış: <h:outputText value="₺ #{kur.doviz.dolarSatisFiyat}"/>
+                                <h:graphicImage value="resources/img/df3.png"/>Euro Alış: <h:outputText value="₺ #{kur.doviz.euroAlisFiyat}"/>
+                                <h:graphicImage value="resources/img/df3.png"/>Euro Satış: <h:outputText value="₺ #{kur.doviz.euroSatisFiyat}"/>
                             </h:panelGrid>
                             <h4><span class="label label-success">Güncelleme Zamanı : 18.05.2017 16:00:03 </span></h4>
                         </div>
@@ -73,6 +72,22 @@
                             </p:selectOneMenu>
                                 <br></br>
                            <h1><h:outputText value="Sonuç : "/></h1>
+                            <h4><span class="label label-success">Güncelleme Zamanı : 18.05.2017 16:00:03 </span></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="panel panel-altin">
+                        <div class="panel-heading"><strong>Altın Kurları</strong></div>
+                        <div class="panel-body">
+                            <h:panelGrid columns="3" class="table table-striped table-bordered">
+                                <h:outputText value="Cinsi" style="font-weight: bold"/><h:outputText value="Alış" style="font-weight: bold"/>  <h:outputText value="Satış" style="font-weight: bold"/>
+                                Çeyrek <h:outputText value="₺ #{kur.altinList.get(0).buying}"/><h:outputText value=" ₺ #{kur.altinList.get(0).selling}"/>
+                                Yarım  <h:outputText value="₺ #{kur.altinList.get(1).buying}"/><h:outputText value="₺ #{kur.altinList.get(1).selling} "/>
+                                Tam <h:outputText value="₺ #{kur.altinList.get(2).buying}"/><h:outputText value="₺ #{kur.altinList.get(2).selling}"/>
+                                Cumhuriyet <h:outputText value="₺ #{kur.altinList.get(3).buying}"/><h:outputText value=" ₺ #{kur.altinList.get(3).selling}"/>
+                            </h:panelGrid>
                             <h4><span class="label label-success">Güncelleme Zamanı : 18.05.2017 16:00:03 </span></h4>
                         </div>
                     </div>
