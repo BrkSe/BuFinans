@@ -10,7 +10,7 @@
 
 
     <properties>
-        <spring.version>6.0.0</spring.version>
+        <spring.version>6.0.8</spring.version>
         <springsecurity.version>4.0.3.RELEASE</springsecurity.version>
     </properties>
 
