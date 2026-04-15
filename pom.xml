@@ -11,7 +11,7 @@
 
     <properties>
         <spring.version>7.0.6</spring.version>
-        <springsecurity.version>4.0.3.RELEASE</springsecurity.version>
+        <springsecurity.version>6.5.1</springsecurity.version>
     </properties>
 
     <dependencies>
@@ -24,7 +24,7 @@
         <dependency>
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
-            <version>20231013</version>
+            <version>20251224</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/commons-logging/commons-logging -->
         <dependency>
